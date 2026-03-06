@@ -1,0 +1,15 @@
+Flask==2.3.3
+Flask-CORS==4.0.0
+pandas==2.2.2
+numpy==1.26.4
+scipy==1.11.4
+networkx==3.2.1
+google-generativeai==0.3.0
+python-dotenv==1.0.1
+opencv-python==4.9.0.80
+scikit-image==0.22.0
+scikit-learn==1.4.2
+moviepy==1.0.3
+librosa==0.10.2
+Pillow==10.3.0
+gunicorn==21.2.0
