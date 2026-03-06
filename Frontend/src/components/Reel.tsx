@@ -67,7 +67,8 @@ export const Reel: FC<ReelProps> = ({ reel }) => {
         }, 150);
 
         try {
-            const response = await fetch('http://localhost:5001/api/analyze/reel', {
+            const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001';
+            const response = await fetch(`${baseUrl}/api/analyze/reel`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

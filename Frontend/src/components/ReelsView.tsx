@@ -10,7 +10,8 @@ export const ReelsView: FC = () => {
     useEffect(() => {
         const fetchReels = async () => {
             try {
-                const res = await fetch('http://localhost:5001/api/reels');
+                const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001';
+                const res = await fetch(`${baseUrl}/api/reels`);
                 const data = await res.json();
                 setReels(data);
             } catch (err) {
