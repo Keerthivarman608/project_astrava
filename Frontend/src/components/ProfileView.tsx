@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import { Settings, Plus, LayoutGrid, Play, Bookmark, UserSquare, Heart, MessageCircle } from 'lucide-react';
 import { mockPosts } from '../data/mock';
 import { useAuth } from '../context/AuthContext';
